@@ -26,6 +26,6 @@ $ npm install rpn
 var rpn = require('rpn');
 ```
 
-### caps(expression)
+### rpn(expression)
 
 Evalutes the postfix `expression` and returns the result.
