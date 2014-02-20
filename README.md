@@ -22,7 +22,9 @@ $ npm install rpn
 
 ## API
 
+``` javascript
 var rpn = require('rpn');
+```
 
 ### caps(expression)
 
