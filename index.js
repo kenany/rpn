@@ -38,4 +38,4 @@ module.exports = function rpn(postfix) {
   }
 
   return stack.pop();
-}
+};
