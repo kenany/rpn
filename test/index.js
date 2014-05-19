@@ -26,14 +26,20 @@ test('works', function(t) {
   });
 });
 
+test('returns zero for empty expression', function(t) {
+  t.plan(1);
+
+  t.equal(rpn(''), 0);
+});
+
 test('throws on insufficient values', function(t) {
   t.plan(1);
 
-  t.throws(rpn.bind(null, '3 +'), 'Insufficient values in expression.');
+  t.throws(rpn.bind(null, '3 +'), new RegExp(/Insufficient/));
 });
 
 test('throws on too many values', function(t) {
   t.plan(1);
 
-  t.throws(rpn.bind(null, '1 + 2 3'), 'Inputted expression has too many values.');
+  t.throws(rpn.bind(null, '1 2 + 3'), new RegExp(/too many/));
 });
