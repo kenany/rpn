@@ -3,7 +3,7 @@ node_js:
   - "0.8"
   - "0.10"
 git:
-  depth: 1
+  depth: 10
 branches:
   only:
     - master
