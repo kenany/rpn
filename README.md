@@ -1,6 +1,6 @@
 # rpn
 
-[![Build Status](https://travis-ci.org/KenanY/rpn.png?branch=master)](https://travis-ci.org/KenanY/rpn)
+[![Build Status](https://travis-ci.org/KenanY/rpn.svg?branch=master)](https://travis-ci.org/KenanY/rpn)
 [![Dependency Status](https://gemnasium.com/KenanY/rpn.png)](https://gemnasium.com/KenanY/rpn)
 
 Reverse Polish Notation implementation.
