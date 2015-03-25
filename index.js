@@ -1,6 +1,4 @@
-var forEach = require('lodash.foreach');
-
-module.exports = function rpn(postfix) {
+function rpn(postfix) {
   if (postfix.length === 0) {
     return 0;
   }
@@ -10,7 +8,8 @@ module.exports = function rpn(postfix) {
 
   var stack = [];
 
-  forEach(postfix, function(token) {
+  for (var i = 0; i < postfix.length; i++) {
+    var token = postfix[i];
 
     // Token is a value, push it onto the stack
     if (token == +token) {
@@ -31,11 +30,13 @@ module.exports = function rpn(postfix) {
       var x = stack.pop();
       stack.push(eval(x + token + ' ' + y));
     }
-  });
+  }
 
   if (stack.length > 1) {
     throw new Error('Inputted expression has too many values.');
   }
 
   return stack.pop();
-};
+}
+
+module.exports = rpn;

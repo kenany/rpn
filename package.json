@@ -20,9 +20,6 @@
   "scripts": {
     "test": "tape test/index.js"
   },
-  "dependencies": {
-    "lodash.foreach": "^2.3.0"
-  },
   "devDependencies": {
     "tape": "^2.1.0"
   }
