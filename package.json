@@ -21,6 +21,6 @@
     "test": "tape test/index.js"
   },
   "devDependencies": {
-    "tape": "^2.1.0"
+    "tape": "^3.5.0"
   }
 }
