@@ -1,6 +1,6 @@
 {
   "name": "rpn",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Reverse Polish Notation implementation.",
   "keywords": [
     "math",
