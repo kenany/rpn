@@ -12,13 +12,12 @@ function rpn(postfix) {
     var token = postfix[i];
 
     // Token is a value, push it onto the stack
-    if (token == +token) {
+    if (!Number.isNaN(+token)) {
       stack.push(parseFloat(token));
     }
 
     // Token is operator
     else {
-
       // Every operation requires two arguments
       if (stack.length < 2) {
         throw new Error('Insufficient values in expression.');
@@ -28,6 +27,7 @@ function rpn(postfix) {
       // operation onto the stack.
       var y = stack.pop();
       var x = stack.pop();
+      /* eslint no-eval: 0 */
       stack.push(eval(x + token + ' ' + y));
     }
   }

@@ -22,7 +22,7 @@ test('works', function(t) {
   t.plan(EXPRESSIONS.length);
 
   EXPRESSIONS.forEach(function(expression) {
-    t.equal(rpn(expression[0]), expression[1]);
+    t.equal(rpn(expression[0]), expression[1], expression[0]);
   });
 });
 
