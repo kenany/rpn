@@ -1,5 +1,5 @@
-var rpn = require('../');
 var test = require('tape');
+var rpn = require('../');
 
 test('exports', function(t) {
   t.plan(1);
