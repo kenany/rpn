@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "@kenan"
+  ],
+  "rangeStrategy": "bump"
+}
