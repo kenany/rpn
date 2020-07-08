@@ -19,15 +19,13 @@
   },
   "scripts": {
     "lint": "eslint *.js test/*.js",
-    "tests-only": "tape test/index.js",
-    "coverage": "nyc npm run -s tests-only",
-    "pretest": "npm run -s lint",
-    "test": "npm run -s tests-only"
+    "coverage": "nyc npm test",
+    "test": "tape test/index.js"
   },
   "devDependencies": {
     "@kenan/eslint-config": "^4.0.0",
     "eslint": "^3.10.1",
-    "nyc": "^8.4.0",
+    "nyc": "^15.1.0",
     "tape": "^4.6.2"
   }
 }
