@@ -1,5 +1,5 @@
-var test = require('tape');
-var rpn = require('../');
+const test = require('tape');
+const rpn = require('../');
 
 test('exports', function(t) {
   t.plan(1);
@@ -8,7 +8,7 @@ test('exports', function(t) {
 });
 
 test('works', function(t) {
-  var EXPRESSIONS = [
+  const EXPRESSIONS = [
     ['0', 0],
     ['3 4 +', 7],
     ['3.5 4.5 +', 8],
@@ -35,11 +35,11 @@ test('returns zero for empty expression', function(t) {
 test('throws on insufficient values', function(t) {
   t.plan(1);
 
-  t.throws(rpn.bind(null, '3 +'), new RegExp(/Insufficient/));
+  t.throws(rpn.bind(null, '3 +'), /Insufficient/);
 });
 
 test('throws on too many values', function(t) {
   t.plan(1);
 
-  t.throws(rpn.bind(null, '1 2 + 3'), new RegExp(/too many/));
+  t.throws(rpn.bind(null, '1 2 + 3'), /too many/);
 });
