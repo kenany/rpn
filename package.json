@@ -27,6 +27,6 @@
     "@kenan/renovate-config": "^1.5.0",
     "eslint": "^7.31.0",
     "nyc": "^15.1.0",
-    "tape": "^5.2.2"
+    "tape": "^5.3.1"
   }
 }
