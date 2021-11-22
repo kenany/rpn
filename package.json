@@ -8,7 +8,10 @@
   ],
   "repository": "KenanY/rpn",
   "license": "MIT",
-  "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
+  "author": "Kenan Yildirim <kenan@kenany.me> (https://kenany.me/)",
+  "engines": {
+    "node": "12 || 14 || >=16"
+  },
   "main": "index.js",
   "files": [
     "index.js",
@@ -20,13 +23,18 @@
   "scripts": {
     "lint": "eslint *.js test/*.js",
     "coverage": "nyc npm test",
+    "release": "semantic-release",
     "test": "tape test/index.js"
   },
   "devDependencies": {
     "@kenan/eslint-config": "^9.0.4",
     "@kenan/renovate-config": "^1.5.1",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "conventional-changelog-conventionalcommits": "^4.6.1",
     "eslint": "^7.32.0",
     "nyc": "^15.1.0",
+    "semantic-release": "^18.0.0",
     "tape": "^5.3.2"
   }
 }
