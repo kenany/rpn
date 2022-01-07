@@ -1,3 +1,9 @@
+'use strict';
+
+/**
+ * @param {string} postfix
+ * @returns {number}
+ */
 function rpn(postfix) {
   if (postfix.length === 0) {
     return 0;
@@ -6,6 +12,7 @@ function rpn(postfix) {
   // Split into array of tokens
   postfix = postfix.split(/\s+/);
 
+  /** @type {number[]} */
   var stack = [];
 
   for (var i = 0; i < postfix.length; i++) {

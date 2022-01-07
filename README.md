@@ -25,4 +25,4 @@ var rpn = require('rpn');
 
 ### rpn(expression)
 
-Evalutes the postfix `expression` and returns the result.
+Evaluates the postfix `expression` and returns the result.
