@@ -13,10 +13,10 @@ function rpn(postfix) {
   postfix = postfix.split(/\s+/);
 
   /** @type {number[]} */
-  var stack = [];
+  const stack = [];
 
-  for (var i = 0; i < postfix.length; i++) {
-    var token = postfix[i];
+  for (let i = 0; i < postfix.length; i++) {
+    const token = postfix[i];
 
     // Token is a value, push it onto the stack
     if (!Number.isNaN(+token)) {
@@ -32,8 +32,8 @@ function rpn(postfix) {
 
       // Pop two items from the top of the stack and push the result of the
       // operation onto the stack.
-      var y = stack.pop();
-      var x = stack.pop();
+      const y = stack.pop();
+      const x = stack.pop();
       /* eslint no-eval: 0 */
       stack.push(eval(x + token + ' ' + y));
     }
