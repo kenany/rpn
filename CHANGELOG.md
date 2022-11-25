@@ -1,3 +1,14 @@
+## [3.0.0](https://github.com/KenanY/rpn/compare/2.0.0...3.0.0) (2022-11-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v12 is no longer supported.
+
+### Features
+
+* drop Node.js v12 support ([a141d29](https://github.com/KenanY/rpn/commit/a141d29ea23aace4208352535c0c7964cb69a96e))
+
 ## [2.0.0](https://github.com/KenanY/rpn/compare/1.0.4...2.0.0) (2021-11-22)
 
 
