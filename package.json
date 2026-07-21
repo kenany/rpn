@@ -33,7 +33,7 @@
     "conventional-changelog-conventionalcommits": "10.2.1",
     "eslint": "8.57.1",
     "nyc": "18.0.0",
-    "semantic-release": "25.0.7",
+    "semantic-release": "25.0.8",
     "tape": "5.10.2"
   }
 }
